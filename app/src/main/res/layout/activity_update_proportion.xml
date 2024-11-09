@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改占比"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入各项成绩的比重和次数"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:paddingLeft="50dp"
+        android:gravity="center"
+        android:background="@drawable/round_stylebegin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:id="@+id/activity_update_proportion_textview_courseName"
+                android:textSize="20dp"
+                android:text="课程名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/activity_update_proportion_textview_classID"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:text="班级"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <!--选择点名次数和成绩占比-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点名次数："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <!--                <EditText-->
+                <!--                    android:id="@+id/activity_manager_course_increase_EditText_rollCall_count"-->
+                <!--                    android:layout_width="80dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:inputType="number"/>-->
+                <Spinner
+                    android:id="@+id/activity_update_proportion_Spinner_rollCall_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成绩占比："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/activity_update_proportion_EditText_rollCall_proportion"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--选择平时作业次数和成绩占比-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作业次数："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <!--                <EditText-->
+                <!--                    android:id="@+id/activity_manager_course_increase_EditText_regularHomework_count"-->
+                <!--                    android:layout_width="80dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:inputType="number"/>-->
+                <Spinner
+                    android:id="@+id/activity_update_proportion_Spinner_regularHomework_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成绩占比："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/activity_update_proportion_EditText_regularHomework_proportion"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--选择上机次数和成绩占比-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上机次数："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <!--                <EditText-->
+                <!--                    android:id="@+id/activity_manager_course_increase_EditText_operate_count"-->
+                <!--                    android:layout_width="80dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:inputType="number"/>-->
+                <Spinner
+                    android:id="@+id/activity_update_proportion_Spinner_operate_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成绩占比："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/activity_update_proportion_EditText_operate_proportion"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%" />
+            </LinearLayout>
+        </LinearLayout>
+<!--        &lt;!&ndash;选择点名次数和成绩占比&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="点名次数："-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="点名成绩占比："-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"/>-->
+<!--            -->
+<!--            <EditText-->
+<!--                android:id="@+id/activity_update_proportion_EditText_rollCall_proportion"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="number" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="%" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;选择平时作业次数和成绩占比&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="作业成绩占比："-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/activity_update_proportion_EditText_regularHomework_proportion"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="number" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="%" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;选择上机次数和成绩占比&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="上机成绩占比："-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/activity_update_proportion_EditText_operate_proportion"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="number" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="%" />-->
+<!--        </LinearLayout>-->
+        <!--提交、重置-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/activity_update_proportion_button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_stylebegin"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/activity_update_proportion_button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_stylebegin"
+                android:text="重置" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

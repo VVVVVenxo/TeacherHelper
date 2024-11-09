@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Activity_Search_byClassIDAndCourseName">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/activity_search_byclassidandcoursename_editText_search"
+                android:layout_width="300dp"
+                android:background="@drawable/round_stylebegin"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_search"/>
+            <Button
+                android:id="@+id/activity_searchStudent_byclassidandcoursename_button_submit"
+                android:layout_marginLeft="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="查找"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/activity_search_byclassidandcoursename_listview_showAllStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

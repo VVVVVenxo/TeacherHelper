@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.teacherhelper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.SplashScreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity_Mana_Manager_Class"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Mana_Import_Manual"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Manager_Grade"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Manager_Course_Increase_ChooseStudent"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Manager_Grade_rollCall"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Update_proportion"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Manager_Grade_operateOrNormalhomework"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Mana_ImportStudent"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_BackUp"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTeaMain"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegister"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_ManaMain"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Manager_Course"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Manager_Course_Increase"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Search_byClassIDAndCourseName"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_ShowStudentGrade"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

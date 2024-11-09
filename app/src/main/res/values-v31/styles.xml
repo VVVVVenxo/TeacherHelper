@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AppCompat.SplashScreen" parent="Theme.Design.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 启动画面背景颜色 -->
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <!-- 启动画面中间显示的图标，默认使用应用图标 -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/dagou</item>
+        <!-- 启动画面中间显示的图标的背景，如果图标背景不透明则无效 -->
+<!--        <item name="android:windowSplashScreenIconBackgroundColor">-->
+<!--            @color/white-->
+<!--        </item>-->
+        <!-- 启动画面启动画面底部的图片。 -->
+<!--        <item name="android:windowSplashScreenBrandingImage">-->
+<!--            @mipmap/ic_launcher-->
+<!--        </item>-->
+        <!-- 启动画面在关闭之前显示的时长。最长时间为 1000 毫秒。 -->
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+    </style>
+</resources>

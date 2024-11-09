@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_tea_update_preMail"
+            android:text="邮箱"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_tea_update_currentMail"
+            android:inputType="textEmailAddress"
+            android:hint="请输入新邮箱"
+            android:textSize="22sp"/>
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_tea_update_MailPwd"
+            android:inputType="textPassword"
+            android:hint="请输入邮箱密码"
+            android:textSize="22sp"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="作业:"-->
+<!--        android:textSize="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_weight="1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:background="@drawable/draw_tableline"/>-->
+
+    <TextView
+        android:id="@+id/listview_student_grade_item_layout_textView_testName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="作业名称"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:background="@drawable/draw_tableline"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="成绩:"-->
+<!--        android:textSize="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/draw_tableline"/>-->
+
+    <TextView
+        android:id="@+id/listview_student_grade_item_layout_textView_grade"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="成绩"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:background="@drawable/draw_back"/>
+
+</LinearLayout>

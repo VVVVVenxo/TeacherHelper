@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置圆形按钮的颜色 -->
+    <solid android:color="#E64982" />
+    <!--弧度-->
+    <corners android:radius="30dp"/>
+    <!-- 设置圆形按钮的大小 -->
+    <size
+        android:width="60dp"
+        android:height="60dp" />
+
+</shape>
